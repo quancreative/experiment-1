@@ -1,10 +1,6 @@
 console.log('\'Allo \'Allo!');
 
-var tl = new TimelineLite({onUpdate:updateSlider});
-tl.set("#timeline-1", {visibility:"visible"})
-    .from("#feature-title", 0.5, {left:-200, autoAlpha:0}) // autoAlpha handles both css properties visibility and opacity.
-    .from("#feature-desc", 0.5, {left:100, autoAlpha:0}, "-=0.25") //add tween 0.25 seconds before previous tween ends
-    .from("#feature-img", 0.5, {scale:0.5, autoAlpha:0}, ".5") // add feature label at start position of this tween
+
 
 
 $("#play").click(function() {
@@ -19,36 +15,20 @@ $("#play").click(function() {
     }
 });
 
-$("#pause").click(function() {
-    tl.pause();
-});
-
-$("#reverse").click(function() {
-    tl.reverse();
-});
-
-$("#resume").click(function() {
-    tl.resume();
-});
-
-$("#restart").click(function() {
-    tl.restart();
-});
-
-$("#slider").slider({
-    range: false,
-    min: 0,
-    max: 100,
-    step:.1,
-    slide: function ( event, ui ) {
-        tl.pause();
-        //adjust the timeline's progress() based on slider value
-        tl.progress( ui.value/100 );
-    }
-});
+//$("#slider").slider({
+//    range: false,
+//    min: 0,
+//    max: 100,
+//    step:.1,
+//    slide: function ( event, ui ) {
+//        tl.pause();
+//        //adjust the timeline's progress() based on slider value
+//        tl.progress( ui.value/100 );
+//    }
+//});
 
 function updateSlider() {
-    $("#slider").slider("value", tl.progress() *100);
+//    $("#slider").slider("value", tl.progress() *100);
 }
 
 $(function(){
@@ -64,12 +44,20 @@ $(function(){
         // Get the hash (fragment) as a string, with any leading # removed. Note that
         // in jQuery 1.4, you should use e.fragment instead of $.param.fragment().
 
-        console.log(e);
+        console.log(e.currentTarget.location.hash);
+        var tl = new TimelineLite({onUpdate:updateSlider});
+        tl.from("#main-nav",.75, {top: -500, autoAlpha: 0 })
+        tl.from("#page-content", 1, {autoAlpha: 0 })
+            .from("#feature-title", 0.5, {left:-200, autoAlpha:0}) // autoAlpha handles both css properties visibility and opacity.
+            .from("#feature-desc", 0.5, {left:100, autoAlpha:0}, "-=0.25") //add tween 0.25 seconds before previous tween ends
+            .from("#feature-img", 0.5, {scale:0.5, autoAlpha:0}, ".5") // add feature label at start position of this tween
 
     });
 
     // Since the event is only triggered when the hash changes, we need to trigger
     // the event now, to handle the hash the page may have loaded with.
     $(window).trigger( 'hashchange' );
+
+    $('#main-nav .nav a')
 
 });
