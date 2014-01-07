@@ -14,6 +14,7 @@
 <script src="scripts/model.js"></script>
 <script src="scripts/controller.js"></script>
 <script src="scripts/main.js"></script>
+<script src="scripts/<?php echo $page_name; ?>.js"></script>
 <!-- endbuild -->
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
