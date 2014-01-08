@@ -1,0 +1,9 @@
+[submodule "app/components/GreenSock-JS"]
+	path = app/components/GreenSock-JS
+	url = git@github.com:greensock/GreenSock-JS.git
+[submodule "app/components/jquery-bbq"]
+	path = app/components/jquery-bbq
+	url = git@github.com:cowboy/jquery-bbq.git
+[submodule "app/components/holder"]
+	path = app/components/holder
+	url = git@github.com:imsky/holder.git
