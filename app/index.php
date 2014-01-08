@@ -32,7 +32,6 @@ function dispatcher()
         $params = array_merge($params, $_GET);
     }
 
-
     if ($current_page == '')
     {
         $current_page = 'welcome';
@@ -43,13 +42,14 @@ function dispatcher()
         load_page($current_page);
     }else
     {
+        header('HTTP/1.0 404 Not Found');
         load_page('missing');
     }
 }
 
 function load_page($page)
 {
-    include('controllers' . '/Controller.php'); // Import base class.s
+    include('controllers' . '/Controller.php'); // Import base class.
     include('controllers' . '/' . $page . '.php');
 
     $page = ucwords($page);

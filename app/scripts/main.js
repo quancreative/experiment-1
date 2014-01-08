@@ -37,6 +37,7 @@ function updateSlider() {
 
 $(function(){
 
+    /*
     Modernizr.load([{
         'load' : 'scripts/works.js',
         'complete' : function(){
@@ -44,6 +45,7 @@ $(function(){
             webapp.init();
         }
     }]);
+     */
 
     // Keep a mapping of url-to-container for caching purposes.
     var cache = {
