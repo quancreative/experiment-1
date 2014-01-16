@@ -19,3 +19,7 @@ body {padding-top: 50px;}
     -moz-transition: opacity 0.4s ease;
     transition: opacity 0.4s ease;
 }
+
+/*******************************/
+/* Works */
+.work-piece{ display: inline-block; position: relative; overflow:hidden; width: 330px; height: 180px; -webkit-transition: outline 0.2s ease; -moz-transition: outline 0.2s ease; transition: outline 0.2s ease;}
