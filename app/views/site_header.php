@@ -12,7 +12,7 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <!-- build:css(.tmp) styles/main.css -->
 
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="<?php echo $this->css_main; ?>">
     <!-- endbuild -->
     <!-- build:js scripts/vendor/modernizr.js -->
     <script src="components/modernizr/modernizr.js"></script>

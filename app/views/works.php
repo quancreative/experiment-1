@@ -1,44 +1,29 @@
 
+<div class="work-piece">
+    <img src="images/pushandtrain.jpg" >
+    <div class="ani-obj-1 desc">
+        <p>Something something</p>
+        <a href="works/oldwebsite">Link</a>
 
-<div class="work-piece">
-    <img src="images/site2.jpg" >
-    <div class="ani-obj-1 desc">
-        <p>Something something</p>
-        <a href="#something">Go</a>
     </div>
 </div>
 <div class="work-piece">
-    <img src="images/site2.jpg" >
+    <img src="images/moonrise.jpg" >
     <div class="ani-obj-1 desc">
         <p>Something something</p>
-        <a href="#something">Go</a>
+
     </div>
 </div>
 <div class="work-piece">
-    <img src="images/site2.jpg" >
+    <img src="images/ambassador_hotel.jpg" >
     <div class="ani-obj-1 desc">
         <p>Something something</p>
-        <a href="#something">Go</a>
+
     </div>
 </div>
 <div class="work-piece">
-    <img src="images/site2.jpg" >
+    <img src="images/fredny.jpg" >
     <div class="ani-obj-1 desc">
         <p>Something something</p>
-        <a href="#something">Go</a>
-    </div>
-</div>
-<div class="work-piece">
-    <img src="images/site2.jpg" >
-    <div class="ani-obj-1 desc">
-        <p>Something something</p>
-        <a href="#something">Go</a>
-    </div>
-</div>
-<div class="work-piece">
-    <img src="images/site2.jpg" >
-    <div class="ani-obj-1 desc">
-        <p>Something something</p>
-        <a href="#something">Go</a>
     </div>
 </div>
